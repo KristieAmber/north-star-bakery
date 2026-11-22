@@ -262,3 +262,32 @@ form button:focus-visible {
         flex: 1 1 100%;
     }
 }
+
+
+/* Favorite bakery buttons */
+#product-buttons button {
+    background-color: #4B3328;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#product-buttons button:hover {
+    background-color: #A76D45;
+}
+
+#product-buttons button:focus-visible {
+    outline: 3px solid #A76D45;
+    outline-offset: 2px;
+}
+
+/* Form error messages */
+.error {
+    color: #9B2929;
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}

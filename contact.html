@@ -30,18 +30,20 @@
             <h2>Send Us a Message</h2>
             <p>Fill out the form below to request a preorder or ask us a question. We will be happy to help!</p>
 
-            <form action="#" method="get">
+            <form id="contact-form" action="#" method="get" novalidate>
                 <fieldset>
                     <legend>Customer Information</legend>
 
                     <p>
                         <label for="name">Full Name:</label>
                         <input type="text" id="name" name="name" required>
+                        <span id="name-error" class="error"></span>
                     </p>
 
                     <p>
                         <label for="email">Email Address:</label>
                         <input type="email" id="email" name="email" required>
+                        <span id="email-error" class="error"></span>
                     </p>
 
                     <p>
@@ -60,11 +62,13 @@
                             <option value="preorder">Preorder Request</option>
                             <option value="question">General Question</option>
                         </select>
+                        <span id="request-error" class="error"></span>
                     </p>
 
                     <p>
                         <label for="details">Item Details:</label>
                         <textarea id="details" name="details" rows="4" cols="40" required></textarea>
+                        <span id="details-error" class="error"></span>
                     </p>
 
                     <p>
@@ -98,6 +102,6 @@
         <p>&copy; 2026 North Star Bakery</p>
         <p>Fresh bread, pastries, and cakes made for our community.</p>
     </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>
