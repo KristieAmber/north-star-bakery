@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery - Contact</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Contact North Star Bakery</h1>
+        <p>Have a question or want to place a preorder? We'd love to hear from you!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Send Us a Message</h2>
+            <p>Fill out the form below to request a preorder or ask us a question. We will be happy to help!</p>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Customer Information</legend>
+
+                    <p>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="pickup">Preferred Pickup Date:</label>
+                        <input type="date" id="pickup" name="pickup">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Order or Inquiry Details</legend>
+
+                    <p>
+                        <label for="request">Request Type:</label>
+                        <select id="request" name="request" required>
+                            <option value="">Please select</option>
+                            <option value="preorder">Preorder Request</option>
+                            <option value="question">General Question</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="details">Item Details:</label>
+                        <textarea id="details" name="details" rows="4" cols="40" required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="allergies">Allergy Notes (if applicable):</label>
+                        <textarea id="allergies" name="allergies" rows="3" cols="40"></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Request</button>
+                    <button type="reset">Clear Form</button>
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Visit Our Bakery</h2>
+            <p>We are located in a neighborhood shopping area and welcome customers to stop by during business hours.</p>
+
+            <h3>Hours of Operation</h3>
+            <p>Monday - Saturday: 7:00 AM - 5:00 PM</p>
+            <p>Sunday: Closed</p>
+
+            <h3>Location</h3>
+            <p>North Star Bakery</p>
+            <p>Downtown neighborhood shopping area</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 North Star Bakery</p>
+        <p>Fresh bread, pastries, and cakes made for our community.</p>
+    </footer>
+
+</body>
+</html>
